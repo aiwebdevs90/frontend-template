@@ -1,0 +1,46 @@
+/* Laptops */
+@media (max-width: 1024px) {}
+
+/* Small Laptops */
+@media (max-width: 991px) {}
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .aph-logo {
+        width: 500px
+    }
+}
+
+/* Large Smartphones */
+@media (max-width: 425px) {
+
+    .ai-logo {
+        width: 100px
+    }
+
+    /* Back to top button */
+    #back-to-top-btn {
+        bottom: 87px;
+        right: 9px;
+    }
+
+}
+
+/* Medium Smartphones */
+@media (max-width: 375px) {
+
+    .ai-text {
+        font-size: 25px;
+    }
+
+}
+
+/* Small Smartphones */
+@media (max-width: 320px) {
+
+    .ai-text {
+        font-size: 20px;
+    }
+
+}

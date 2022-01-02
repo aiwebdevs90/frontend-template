@@ -26,6 +26,11 @@ main {
 }
 
 /* Header */
+.ai-text {
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
 .ai-logo {
     width: 125px
 }
