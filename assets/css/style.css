@@ -35,6 +35,13 @@ main {
     width: 125px
 }
 
+/* Main Content */
+/* Carousel image */
+.carousel-img {
+    width: 100%;
+    height: 500px;
+}
+
 /* Back to top button */
 #back-to-top-btn {
     font-size: 30px;

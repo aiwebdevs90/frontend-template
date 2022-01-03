@@ -13,7 +13,7 @@
     <!-- Font Awesome v6.0.0 Beta 3 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Hover v2.3.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
         integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
@@ -37,57 +37,123 @@
 </head>
 
 <body>
-    <!-- Header containing logo img -->
-    <header class="px-0 px-lg-3 bg-white rounded-0" id="main-head">
+    <!-- Top Header -->
+    <header class="px-0 px-lg-3 bg-white rounded-0">
         <div class="row g-0 pt-lg-3">
             <!-- Company Logo -->
-            <div class="col-12 col-lg-8 logo-con bg-white text-center text-lg-start pt-3 pb-2 pt-lg-0 pb-lg-3">
+            <div class="col-12 col-lg-4 text-center text-lg-start pt-3 pb-2 pt-lg-0 pb-lg-3">
                 <a class="navbar-brand text-uppercase ai-text text-black" href="#" target="_blank">
                     <img src="./assets/images/ai-logo.png" alt="AI Web Devs Logo" class="ai-logo"> AI Web Devs</a>
             </div>
+            <!-- Empty column -->
+            <div class="col-12 col-lg-4 text-center pt-3 pb-2 pt-lg-0 pb-lg-3">
+                <br>
+                <h4>Something Here,<br>if you want</h4>
+            </div>
+            <!-- Empty column -->
+            <div class="col-12 col-lg-4 text-center pt-3 pb-2 pt-lg-0 pb-lg-3">
+                <br>
+                <h4>Something Here,<br>if you want</h4>
+            </div>
         </div>
     </header>
-
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white border sticky-top" id="main-nav">
-        <div class="container-fluid">
-            <!-- Mobile nav button -->
-            <button class="navbar-toggler mb-2 mx-auto px-5 rounded-0 bg-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbar-toggle">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navigation links -->
-            <div class="collapse navbar-collapse" id="navbar-toggle">
-                <ul class="navbar-nav mx-auto text-uppercase fw-bold">
-                    <li class="nav-item">
-                        <!-- About link -->
-                        <a class="nav-link about-link px-4 ls-4 text-black text-center" href="#about">Link One</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- Service link -->
-                        <a class="nav-link services-link px-4 ls-4 text-black text-center" href="#services">Link Two</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- Contact link -->
-                        <a class="nav-link contact-link px-4 ls-4 text-black text-center" href="#contact">Link Three</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-white border sticky-top">
+        <!-- Mobile nav button -->
+        <button class="navbar-toggler mb-2 mx-auto px-5 rounded-0 bg-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar-toggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="navbar-toggle">
+            <ul class="navbar-nav mx-auto text-uppercase fw-bold">
+                <li class="nav-item">
+                    <!-- Nav link -->
+                    <a class="nav-link about-link px-4 ls-4 text-black text-center" href="#">Link One</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Nav link -->
+                    <a class="nav-link services-link px-4 ls-4 text-black text-center" href="#">Link Two</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Nav link -->
+                    <a class="nav-link contact-link px-4 ls-4 text-black text-center" href="#">Link Three</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Nav link -->
+                    <a class="nav-link contact-link px-4 ls-4 text-black text-center" href="#">Link Four</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <!-- Main content section -->
     <main>
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Carousel bottom indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Carousel image 1 -->
+                <div class="carousel-item active">
+                    <img src="https://wallpapercave.com/wp/wp3429905.jpg" class="d-block carousel-img mx-auto"
+                        alt="Grey background image">
+                    <!-- Carousel caption -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <!-- Carousel image 2 -->
+                <div class="carousel-item">
+                    <img src="https://wallpapercave.com/wp/wp3429905.jpg" class="d-block carousel-img mx-auto"
+                        alt="Grey background image">
+                    <!-- Carousel caption -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <!-- Carousel image 3 -->
+                <div class="carousel-item">
+                    <img src="https://wallpapercave.com/wp/wp3429905.jpg" class="d-block carousel-img mx-auto"
+                        alt="Grey background image">
+                    <!-- Carousel caption -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel previous button -->
+            <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#myCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <!-- Carousel next button -->
+            <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#myCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Multiple sections -->
         <section class="bg-dark text-white text-center py-5">
-            <h1>Section 1</h1>
+            <h1 class="py-5">Section 1</h1>
         </section>
         <section class="bg-secondary text-white text-center py-5">
-            <h1>Section 2</h1>
+            <h1 class="py-5">Section 2</h1>
         </section>
         <section class="bg-dark text-white text-center py-5">
-            <h1>Section 3</h1>
+            <h1 class="py-5">Section 3</h1>
         </section>
         <section class="bg-secondary text-white text-center py-5">
-            <h1>Section 4</h1>
+            <h1 class="py-5">Section 4</h1>
         </section>
 
         <!--Back to top button-->
@@ -108,14 +174,24 @@
                     <!-- Github -->
                     <a href="#" target="_blank"><i class="fab fa-github-square fa-2x text-black"
                             aria-hidden="true"></i></a>
+                    <!-- Twitter -->
+                    <a href="#" target="_blank"><i class="fab fa-twitter-square fa-2x text-black"
+                            aria-hidden="true"></i></a>
+                    <!-- Instagram -->
+                    <a href="#" target="_blank"><i class="fab fa-instagram-square fa-2x text-black"
+                            aria-hidden="true"></i></a>
+                    <!-- Whatsapp -->
+                    <a href="#" target="_blank"><i class="fab fa-whatsapp-square fa-2x text-black"
+                            aria-hidden="true"></i></a>
+                    <!-- LinkedIn -->
+                    <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x text-black" aria-hidden="true"></i></a>
                 </span>
             </div>
         </div>
         <!-- Copyright -->
         <div class="row g-0 pt-1">
             <div class="col-12 copyright">
-                <a href="https://github.com/aiwebdevs90?tab=repositories" target="_blank"
-                    class="nav-link p-0 small text-black fw-bold">
+                <a href="#" target="_blank" class="nav-link p-0 small text-black fw-bold">
                     &copy; <span id="copyright-footerYear"></span> AI Web Devs
                 </a>
             </div>

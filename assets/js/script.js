@@ -7,7 +7,7 @@ $(document).ready(function () {
     //This part of the code makes the button visible when the user scrolls
     let topButton = $('#back-to-top-btn');
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 10) {
+        if ($(window).scrollTop() > 0) {
             topButton.addClass('visible');
         } else {
             topButton.removeClass('visible');
